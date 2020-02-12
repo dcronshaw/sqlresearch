@@ -18,5 +18,23 @@
 
 ## ER Diagrams
   ER(entity relational) diagrams are used to show how the database will be set up, and the relationships between the entities, with all of the keys illustrated in an easy to read, well laid out format. ERDs also allow you to better visualize the flow of your database, and neatly shows the relationships between entities.  
+  
+## Data Normalization
+  Data normalization is a process used to significantly reduce or eliminate redundancies in databases. This forces the database to have information in one place only, therefore eliminating inconsistencies between entities. 
+  
+### 1NF
+  1NF(first normal form) requires the elimination of repeating groups in individual tables by grouping data by relations, and giving them an identifier(primary key).
+  
+### 2NF
+  2NF(second normal form) requires each value to be declared if one table only, and then provided to others using foreign keys. For example, if you're running an Ecommerce site, Customer Name is probably requrie by billing, shipping, etc, but may only be declared in the customer table. 
+  
+### 3NF
+  3NF(third normal form) require the elimination of any values that are not directly related to the primary key in a table.
+  This can be achieved by creating new tables for the unrelated values, and linking them in using foreign keys.  *note* Using 3NF is not entirely practical. By using lots of different tables, it can significantly slow down the speed and efficiency of your database.
+  
+## Indexes
+  
+
+
 
 
