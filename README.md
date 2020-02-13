@@ -30,9 +30,24 @@
   
 ### 3NF
   3NF(third normal form) require the elimination of any values that are not directly related to the primary key in a table.
-  This can be achieved by creating new tables for the unrelated values, and linking them in using foreign keys.  *note* Using 3NF is not entirely practical. By using lots of different tables, it can significantly slow down the speed and efficiency of your database.
+This can be achieved by creating new tables for the unrelated values, and linking them in using foreign keys.  *note* Using 3NF is not entirely practical. By using lots of different tables, it can significantly slow down the speed and efficiency of your database.
   
 ## Indexes
+  Indexes are used to speed up searches by grouping together columns. For example, if you had two columns, first_name and last_name, you could make an index called full_name(or something to this effect) combining them into one. Indexes are unable to be seen by the end user, they are strictly there to speed up the database queries.
+  
+## Relational vs Non-relational Databases
+  The main difference between relational and non-relational databases, is the presence or lack of strict constraints and structure. 
+  
+### Relational
+  Relational databases should be used if you have a strict structure and layout you are planning on using. If you are planning on pushing and pulling data from the database regularly, your structure is not going to change, and want to easily query, relational is definitely the way to go for you.
+  
+### Non-relational
+  Non-relational is perfect if you're developing an app, and need to store large amounts of data. It is much easier to change on the fly, and will not get you bogged down with restrictions. 
+  
+  
+## PHP or MYSQL
+  According to the experts, doing work on the db side should be avoided if possible, to prevent changing or deleting important data. There are some exceptions however. Deleting or reducing data should be done by mysql, as should sub-queries and joins. 
+  
   
 
 
